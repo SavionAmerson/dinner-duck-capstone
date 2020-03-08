@@ -1,7 +1,9 @@
+body{
+  background-color: #6600aa;
+}
+
 .App {
   text-align: center;
-  background-color: #6600aa;
-  min-height: 100vh;
 }
 
 .App-header {
