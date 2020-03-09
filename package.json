@@ -7,9 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "git repository": "https://github.com/SavionCychet/dinner-duck-capstone",
-  "keywords": [
-    ""
-  ],
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavionCychet/dinner-duck-capstone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SavionCychet/dinner-duck-capstone/issues"
+  },
+  "homepage": "https://github.com/SavionCychet/dinner-duck-capstone#readme"
 }
