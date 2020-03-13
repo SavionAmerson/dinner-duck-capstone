@@ -10,7 +10,7 @@ class HomePage extends React.Component {
               <h1>WELCOME TO THE POND!</h1>
               <div class='buttons'>
                 <div class='button-hold'>
-                <Link>
+                <Link to="/registration">
                 <button type="button" class="new-duck btn-primary">I'M A NEW DUCK</button>
                 </Link>
                 <Link to="/login">
