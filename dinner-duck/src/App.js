@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Logo from "./components/logo";
 import "./App.css";
 import Nav from './components/navbar/navbar'
@@ -11,8 +12,12 @@ class App extends Component {
     return (
       <div className="App">
         <Logo />
-        {/* <HomePage /> */}
-        <LoginPage />
+        <Router>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/login" exact component={LoginPage} />
+        </Switch>
+        </Router>
         <Nav />
       </div>
     );

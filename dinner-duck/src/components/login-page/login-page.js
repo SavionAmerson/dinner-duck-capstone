@@ -6,7 +6,7 @@ class LoginPage extends React.Component {
     render() {
       return (
           <div>
-              <h1>MIND TELING US WHO YOU ARE?!</h1>
+              <h1>MIND TELLING US WHO YOU ARE?</h1>
               <div class="page-cont">
               <div class="input-hold">
                   <input placeholder="Name"></input>
