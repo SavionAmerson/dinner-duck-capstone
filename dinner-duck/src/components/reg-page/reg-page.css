@@ -1,4 +1,4 @@
-/* h1{
+h1{
     font-family: 'moon';
     color: white;
     margin-top: 3%;
@@ -35,4 +35,4 @@
 .new-duck:active, .return-duck:active{
     background-color: white;
     color: #6600aa;
-} */
+}

@@ -5,7 +5,7 @@ h1{
     font-size: 36px;
 }
 
-.input-hold{
+.num-input-hold{
     display: flex;
     flex-direction: column;
     width: 10%;

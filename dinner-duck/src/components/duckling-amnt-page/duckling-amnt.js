@@ -9,11 +9,11 @@ class AmntPage extends React.Component {
           <div>
               <h1>HELLO NAME! <br /> HOW MANY DUCKLINGS ARE YOU FEEDING?</h1>
               <div class="page-cont">
-              <div class="input-hold">
+              <div class="num-input-hold">
               <input placeholder="MAX. 9" type="number" id="quantity" name="quantity" min="1" max="9" />
               </div>
               </div>
-              <Link to="/budget">
+              <Link to="/names">
               <button class="quack">QUACK!</button>
               </Link>
           </div>

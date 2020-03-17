@@ -18,7 +18,9 @@ class RegPage extends React.Component {
                   <input placeholder="Password"></input>
               </div>
               </div>
+              <Link to="/group-size">
               <button class="quack">QUACK!</button>
+              </Link>
           </div>
       );
     }
