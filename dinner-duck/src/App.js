@@ -2,14 +2,13 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Logo from "./components/logo";
 import "./App.css";
-import Nav from './components/navbar/navbar'
-import HomePage from './components/home-page/home-page'
-import LoginPage from './components/login-page/login-page'
-import RegPage from './components/reg-page/reg-page'
-import AmntPage from './components/duckling-amnt-page/duckling-amnt'
-import BudgetPage from './components/budget-page/budget-page'
-import DucklingNames from './components/ducking-names/duckling-names'
-
+import Nav from "./components/navbar/navbar";
+import HomePage from "./components/home-page/home-page";
+import LoginPage from "./components/login-page/login-page";
+import RegPage from "./components/reg-page/reg-page";
+import AmntPage from "./components/duckling-amnt-page/duckling-amnt";
+import BudgetPage from "./components/budget-page/budget-page";
+import DucklingNames from "./components/ducking-names/duckling-names";
 
 class App extends Component {
   render() {
@@ -17,14 +16,14 @@ class App extends Component {
       <div className="App">
         <Logo />
         <Router>
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/login" exact component={LoginPage} />
-          <Route path="/registration" exact component={RegPage} />
-          <Route path="/group-size" exact component={AmntPage}/>
-          <Route path="/budget" exact component={BudgetPage}/>
-          <Route path="/names" exact component={DucklingNames} />
-        </Switch>
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+            <Route path="/login" exact component={LoginPage} />
+            <Route path="/registration" exact component={RegPage} />
+            <Route path="/group-size" exact component={AmntPage} />
+            <Route path="/budget" exact component={BudgetPage} />
+            <Route path="/names" exact component={DucklingNames} />
+          </Switch>
         </Router>
         <Nav />
       </div>
@@ -32,4 +31,16 @@ class App extends Component {
   }
 }
 
+// function getUserName(userName) {
+//   userName = document.getElementById("new-name").value;
+//   console.log(userName);
+//   localStorage.setItem("userNameKey", userName);
+// }
+
+
+
 export default App;
+
+// Grab the value from the element by the ID
+// Store it in a variable
+// Log it

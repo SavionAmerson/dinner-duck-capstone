@@ -3,6 +3,7 @@ import './duckling-names.css';
 import { Link } from 'react-router-dom';
 
 
+
 class RegPage extends React.Component {
     render() {
       return (
