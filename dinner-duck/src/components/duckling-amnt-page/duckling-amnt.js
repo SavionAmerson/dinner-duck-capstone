@@ -16,13 +16,16 @@ class AmntPage extends React.Component {
     render() {
       return (
           <div>
-              <h1>HELLO {newUserName} <br /> HOW MANY DUCKLINGS ARE YOU FEEDING?</h1>
+              <h1>HELLO {newUserName + "!"} <br /> HOW MANY DUCKLINGS ARE YOU FEEDING?</h1>
               <div class="page-cont">
               <div class="num-input-hold">
               <input placeholder="MAX. 9" type="number" id="quantity" name="quantity" min="1" max="9" />
               </div>
               </div>
-              <Link to="/names">
+              <Link to="/">
+              <button class="quack">BACK!</button>
+              </Link>
+              <Link to="/budget">
               <button onClick={this.numberGetter} class="quack">QUACK!</button>
               </Link>
           </div>
@@ -30,7 +33,7 @@ class AmntPage extends React.Component {
     }
   }
 
-  const ducklingAmount = localStorage.getItem("ducklingAmountKey")
+  const ducklingAmount = localStorage.getItem("ducklingAmountKey");
 
 export default AmntPage;
 export {ducklingAmount};

@@ -36,3 +36,9 @@ h1{
     background-color: white;
     color: #6600aa;
 }
+
+p{
+    font-family: "moon";
+    color: white;
+    font-size: 24px;
+}

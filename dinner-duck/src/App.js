@@ -9,6 +9,7 @@ import RegPage from "./components/reg-page/reg-page";
 import AmntPage from "./components/duckling-amnt-page/duckling-amnt";
 import BudgetPage from "./components/budget-page/budget-page";
 import DucklingNames from "./components/ducking-names/duckling-names";
+import ResultsPage from "./components/results-page/results";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/group-size" exact component={AmntPage} />
             <Route path="/budget" exact component={BudgetPage} />
             <Route path="/names" exact component={DucklingNames} />
+            <Route path="/results" exact component={ResultsPage} />
           </Switch>
         </Router>
         <Nav />

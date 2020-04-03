@@ -11,7 +11,7 @@ class Nav extends React.Component {
                     <li class="creds">Step 2</li>
                     <li class="how-many">Step 3</li>
                     <li class="budget">Step 4</li>
-                    <li class="recoms">Step 5</li>
+                    {/* <li class="recoms">Step 5</li> */}
                 </ul>
             </nav>
         </div>

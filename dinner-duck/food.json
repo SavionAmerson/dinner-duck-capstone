@@ -1,0 +1,17 @@
+{
+    "underFourteenFood": [
+        "$2 burger",
+        "$7 sandwich",
+        "$6 chicken bucket",
+        "$9 chinese meal",
+        "$6 salad",
+        "$7 soup"
+    ],
+
+    "overFourteenFood": [
+        "$14 pizza",
+        "$16 pasta",
+        "$12 sushi",
+        "$13 mexican meal"
+    ]
+}
