@@ -1,0 +1,16 @@
+.option-hold{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#food-option{
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
