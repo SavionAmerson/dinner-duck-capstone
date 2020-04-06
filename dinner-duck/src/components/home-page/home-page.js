@@ -14,10 +14,9 @@ class HomePage extends React.Component {
 
     render() {
       return (
-          <div>
+          <div class="home-page">
               <h1>WELCOME TO THE POND!</h1>
-              <p>In charge of feeding a group of people with a limited budget? <br/> Dinner Duck is a tool
-                that helps you plan what to do for the meal! </p>
+              <p>that helps you plan what to do for a meal for multiple </p>
               <div class='buttons'>
                 <div class='button-hold'>
 
@@ -26,9 +25,6 @@ class HomePage extends React.Component {
                 <Link to="/group-size">
                 <button onClick={this.newCredGetter} type="button" class="new-duck btn-primary">QUACK!</button>
                 </Link>
-                {/* <Link to="/login">
-                <button type="button" class="return-duck btn-primary" href="/login">I HAVE RETURNED</button>
-                </Link> */}
                 </div>
               </div>
           </div>

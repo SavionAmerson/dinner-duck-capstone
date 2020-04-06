@@ -15,7 +15,7 @@ class AmntPage extends React.Component {
 
     render() {
       return (
-          <div>
+          <div class="home-page">
               <h1>HELLO {newUserName + "!"} <br /> HOW MANY DUCKLINGS ARE YOU FEEDING?</h1>
               <div class="page-cont">
               <div class="num-input-hold">
@@ -25,7 +25,7 @@ class AmntPage extends React.Component {
               <Link to="/">
               <button class="quack">BACK!</button>
               </Link>
-              <Link to="/budget">
+              <Link to="/names">
               <button onClick={this.numberGetter} class="quack">QUACK!</button>
               </Link>
           </div>

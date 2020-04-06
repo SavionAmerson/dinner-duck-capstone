@@ -76,11 +76,16 @@ const foodFive = localStorage.getItem("foodFive");
 console.log(foodFive)
 
 
+
+// const testDiv = <div><h1>Hello</h1></div>
+// const testElem = document.createElement('div').innerHTML = testDiv;
+
+
 class ResultsPage extends React.Component {
 
     render() {
       return (
-          <div>
+          <div class="home-page">
               <h1>Here's five options for ${budget} split between {ducklingAmount} ducklings!
               <br/> That's ${budgetSplit} for each duckling!</h1>
               <div class="page-cont">
