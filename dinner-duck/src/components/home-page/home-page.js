@@ -16,7 +16,7 @@ class HomePage extends React.Component {
       return (
           <div class="home-page">
               <h1>WELCOME TO THE POND!</h1>
-              <p>that helps you plan what to do for a meal for multiple </p>
+              <p>A tool that helps you plan what to do for a meal for multiple! </p>
               <div class='buttons'>
                 <div class='button-hold'>
 

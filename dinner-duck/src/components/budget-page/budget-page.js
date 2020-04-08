@@ -18,7 +18,7 @@ class BudgetPage extends React.Component {
           <div class="home-page">
               <h1>GOT IT! NOW, <br /> WHAT BUDGET ARE YOU WORKING WITH?</h1>
               <div class="page-cont">
-              <div class="input-hold">
+              <div class="num-input-hold">
               <input id="budget-amnt" placeholder="MAX. $100" type="number" name="quantity" min="1" max="100" />
               </div>
               </div>

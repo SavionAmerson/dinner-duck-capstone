@@ -17,11 +17,16 @@ class RegPage extends React.Component {
         console.log(rows);
       }
       return (
-        <div class="home-page">
-              <div id="field-hold">
+        <div class="name-page">
               <h1 id="name-heading">WHAT ARE THEIR NAMES?</h1>
+              <div id="field-hold">
+                <div id="fields">
+                  {rows}
+                </div>
               </div>
-              {rows}
+              <Link to="/group-size">
+              <button class="quack">BACK!</button>
+              </Link>
               <Link to="/budget">
               <button class="quack">QUACK!</button>
               </Link>

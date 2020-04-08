@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Logo from "./components/logo";
 import "./App.css";
-import Nav from "./components/navbar/navbar";
+import Navbar from "./components/navbar/navbar";
 import HomePage from "./components/home-page/home-page";
 import LoginPage from "./components/login-page/login-page";
 import RegPage from "./components/reg-page/reg-page";
@@ -10,11 +10,13 @@ import AmntPage from "./components/duckling-amnt-page/duckling-amnt";
 import BudgetPage from "./components/budget-page/budget-page";
 import DucklingNames from "./components/ducking-names/duckling-names";
 import ResultsPage from "./components/results-page/results";
+import Credit from './components/credit'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* <Navbar /> */}
         <Logo />
         <Router>
           <Switch>
@@ -26,19 +28,12 @@ class App extends Component {
             <Route path="/names" exact component={DucklingNames} />
             <Route path="/results" exact component={ResultsPage} />
           </Switch>
+          <Credit />
         </Router>
-        <Nav />
       </div>
     );
   }
 }
-
-// function getUserName(userName) {
-//   userName = document.getElementById("new-name").value;
-//   console.log(userName);
-//   localStorage.setItem("userNameKey", userName);
-// }
-
 
 
 export default App;

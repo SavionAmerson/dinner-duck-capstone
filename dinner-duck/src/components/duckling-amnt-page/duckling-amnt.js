@@ -15,12 +15,10 @@ class AmntPage extends React.Component {
 
     render() {
       return (
-          <div class="home-page">
+          <div class="amnt-page">
               <h1>HELLO {newUserName + "!"} <br /> HOW MANY DUCKLINGS ARE YOU FEEDING?</h1>
               <div class="page-cont">
-              <div class="num-input-hold">
               <input placeholder="MAX. 9" type="number" id="quantity" name="quantity" min="1" max="9" />
-              </div>
               </div>
               <Link to="/">
               <button class="quack">BACK!</button>

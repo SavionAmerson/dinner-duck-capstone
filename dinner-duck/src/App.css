@@ -3,7 +3,11 @@ body{
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .App-header {
@@ -15,3 +19,9 @@ body{
 }
 
 
+@media only screen and (max-width: 400px){
+  .App {
+    text-align: center;
+    width: 100%;
+  }
+}
