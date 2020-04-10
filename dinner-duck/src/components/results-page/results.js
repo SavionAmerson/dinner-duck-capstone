@@ -3,82 +3,30 @@ import './results.css'
 import { Link } from 'react-router-dom';
 import { ducklingAmount } from '../duckling-amnt-page/duckling-amnt';
 import { budget } from '../budget-page/budget-page';
-import foodData from '../../food.json'
+import foodData from '../../food.json';
+import { ducklingsStored } from '../ducking-names/duckling-names'
+
+console.log(ducklingsStored + "YEE");
 
 const budgetSplit = budget / ducklingAmount;
 
+let foodResults = [];
 
-if (budgetSplit < 14) {
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.underFourteenFood[foodNum];
+ for(let i = 1; i <= ducklingAmount; i++ ){
 
-    localStorage.setItem("foodOne", foods)
+  var foodNum = Math.floor(Math.random() * foodData.underFourteenFood.length) + 1;
 
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.underFourteenFood[foodNum];
+  var foods = foodData.underFourteenFood[foodNum];
 
-    localStorage.setItem("foodTwo", foods)
+  const foodOptions = <div><h1 id="food-option">{localStorage.getItem("ducklingName" + i) + " - " + foods}</h1></div>
 
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.underFourteenFood[foodNum];
+  const fieldInject = document.createElement('div').innerHTML = foodOptions;
 
-    localStorage.setItem("foodThree", foods)
+  foodResults.push(fieldInject);
 
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.underFourteenFood[foodNum];
-
-    localStorage.setItem("foodFour", foods)
-
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.underFourteenFood[foodNum];
-
-    localStorage.setItem("foodFive", foods)
-} else {
-  var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.overFourteenFood[foodNum];
-
-    localStorage.setItem("foodOne", foods)
-
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.overFourteenFood[foodNum];
-
-    localStorage.setItem("foodTwo", foods)
-
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.overFourteenFood[foodNum];
-
-    localStorage.setItem("foodThree", foods)
-
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.overFourteenFood[foodNum];
-
-    localStorage.setItem("foodFour", foods)
-
-    var foodNum = Math.floor(Math.random() * 5) + 1;
-    var foods = foodData.overFourteenFood[foodNum];
-
-    localStorage.setItem("foodFive", foods)
+  console.log(foodResults);
 }
 
-const foodOne = localStorage.getItem("foodOne");
-console.log(foodOne)
-
-const foodTwo = localStorage.getItem("foodTwo");
-console.log(foodTwo)
-
-const foodThree = localStorage.getItem("foodThree");
-console.log(foodThree)
-
-const foodFour = localStorage.getItem("foodFour");
-console.log(foodFour)
-
-const foodFive = localStorage.getItem("foodFive");
-console.log(foodFive)
-
-
-
-// const testDiv = <div><h1>Hello</h1></div>
-// const testElem = document.createElement('div').innerHTML = testDiv;
 
 
 class ResultsPage extends React.Component {
@@ -90,11 +38,7 @@ class ResultsPage extends React.Component {
               <br/> That's ${budgetSplit} for each duckling!</h1>
               <div class="page-cont">
               <div class="option-hold">
-              <h1 id="food-option">{foodOne}</h1>
-              <h1 id="food-option">{foodTwo}</h1>
-              <h1 id="food-option">{foodThree}</h1>
-              <h1 id="food-option">{foodFour}</h1>
-              <h1 id="food-option">{foodFive}</h1>
+              {foodResults}
               </div>
               </div>
               {/* <button class="quack">RETRY</button> */}

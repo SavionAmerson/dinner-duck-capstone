@@ -1,8 +1,9 @@
 import React from "react";
 import './budget-page.css'
 import { Link } from 'react-router-dom';
+import { ducklingsStored } from '../ducking-names/duckling-names'
 
-
+console.log(ducklingsStored);
 
 class BudgetPage extends React.Component {
 
@@ -25,9 +26,9 @@ class BudgetPage extends React.Component {
               <Link to="/group-size">
               <button class="quack">BACK!</button>
               </Link>
-              <Link to="/results">
+              <a href="/results">
               <button onClick={this.budgetGetter} class="quack">QUACK!</button>
-              </Link>
+              </a>
           </div>
       );
     }

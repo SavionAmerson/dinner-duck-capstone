@@ -15,7 +15,6 @@ h1{
 }
 
 input{
-    /* margin-top: 10%; */
     border-radius: 15px;
     background-color: transparent;
     border-style: solid;
@@ -24,7 +23,7 @@ input{
     font-family: 'moon';
     text-align: center;
     height: 60px;
-    width: 100%;
+    width: 50%;
 }
 
 ::placeholder{
@@ -68,5 +67,7 @@ input{
         font-size: 24px;
     }
 
-    
+    .quack{
+        margin-top: 15%;
+    }
 }

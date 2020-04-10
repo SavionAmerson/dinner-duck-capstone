@@ -23,9 +23,9 @@ class AmntPage extends React.Component {
               <Link to="/">
               <button class="quack">BACK!</button>
               </Link>
-              <Link to="/names">
+              <a href="/names">
               <button onClick={this.numberGetter} class="quack">QUACK!</button>
-              </Link>
+              </a>
           </div>
       );
     }

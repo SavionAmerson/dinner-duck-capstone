@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 class HomePage extends React.Component {
 
-  newCredGetter(newName, newEmail, newPW) {
+  newCredGetter(newName) {
     newName = document.getElementById("new-name").value;
     console.log(newName);
     localStorage.setItem("newUserNameKey", newName);
@@ -20,11 +20,9 @@ class HomePage extends React.Component {
               <div class='buttons'>
                 <div class='button-hold'>
 
-                <input type="" id="new-name" placeholder="Enter Name"></input>
+                <input type="text" id="new-name" placeholder="Enter Name" required></input>
 
-                <Link to="/group-size">
-                <button onClick={this.newCredGetter} type="button" class="new-duck btn-primary">QUACK!</button>
-                </Link>
+                <a href="/group-size"><button onClick={this.newCredGetter} type="button" class="new-duck btn-primary">QUACK!</button></a>
                 </div>
               </div>
           </div>

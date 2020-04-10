@@ -4,7 +4,7 @@ import "./navbar.css";
 class Nav extends React.Component {
   render() {
     return (
-        <div>
+        <div class="nav-holder">
             <footer class="navbar">
                 <ul class="nav-ul">
                     <li class="home">Step 1</li>
