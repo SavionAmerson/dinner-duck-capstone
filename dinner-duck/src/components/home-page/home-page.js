@@ -10,6 +10,12 @@ class HomePage extends React.Component {
     newName = document.getElementById("new-name").value;
     console.log(newName);
     localStorage.setItem("newUserNameKey", newName);
+
+    // if (newName == "") {
+    //   document.getElementById("new-name").disabled = true;
+    //   alert("Name must be filled out");
+    //   return true;
+    // }
   }
 
     render() {
